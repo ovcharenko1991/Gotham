@@ -1,0 +1,262 @@
+@font-face {
+	src: url('../font/ProximaNova/ProximaNova-Regular.woff');
+	font-family: ProximaNova;
+}
+@font-face {
+	src: url('../font/Roboto/Roboto-Light.ttf');
+	font-family: Roboto;
+}
+
+html {
+	font-size: 10px;
+}
+.header {
+	background-color: #ffcc33;
+	height: 65px;
+}
+.header-middle {
+	padding-top: 20px;
+	font-family: ProximaNova, sans-serif;
+	font-size: 2.7rem;
+}
+.box {
+	padding-left: 90px;
+	padding-right: 90px;
+}
+.header nav {
+	display: flex;
+	justify-content: space-around;
+	height: inherit;
+	align-items: center;
+}
+.header nav a {
+	font-family: ProximaNova, sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #111;
+	font-size: 1.6rem;
+	transition: color .4s;
+}
+.header nav a:hover {
+	color: #FFF;
+}
+
+
+main {
+	width: 69%;
+	display: inline-block;
+	border-right: 1px solid grey;
+}
+aside {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+}
+.aside-container {
+	padding-left: 40px;
+	padding-top: 90px;
+}
+.search {
+	padding-bottom: 10%;
+}
+.search input {
+	border-radius: 30px;
+	width: 100%;
+	position: relative;
+	height: 30px;
+	padding-left: 40px;
+	font-size: 1.7rem;
+	outline: 0;
+}
+.search i {
+	position: absolute;
+	z-index: 1;
+	margin-left: 15px;
+	margin-top: 7px;
+}
+i:hover {
+	cursor: pointer;
+}
+.article {
+	display: flex;
+	padding-bottom: 5%;
+}
+.article-img {
+	position: relative;
+	flex: 1 0 25%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.article-img img {
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	transition: transform .4s ease-in;
+	border-radius: 5px;
+}
+.article-img img:hover {
+	transform: scale(1.2);
+	cursor: pointer;
+}
+.article-content {
+	flex: 0 1 75%;
+	padding-left: 30px;
+}
+.article-content h3 {
+	margin-top: -6px;
+	font-family: ProximaNova, sans-serif;
+	font-weight: 300;
+	font-size: 3rem;
+	text-transform: capitalize;
+	transition: transform .3s ease-in;
+}
+.article-content h3:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+	color: #e7bb24;
+}
+.article-content p {
+	font-family: Roboto, sans-serif;
+	font-size: 1.6rem;
+}
+span {
+	color: #e7bb24;
+}
+span:hover {
+	cursor: pointer;
+}
+h5 {
+	font-family: ProximaNova, sans-serif;
+	font-size: 1.3rem;
+	font-weight: 300;
+}
+.button {
+	display: flex;
+	justify-content: center;
+}
+button {
+	text-transform: uppercase;
+	border: 1px solid #e7bb24;
+	background-color: #fff;
+	padding: 15px 40px;
+	border-radius: 5px;
+	font-family: ProximaNova, sans-serif;
+	font-size: 1.6rem;
+	margin-bottom: 5%;
+	outline: 0;
+}
+button:hover {
+	cursor: pointer;
+	background-color: #e7bb24;
+	color: #fff;
+}
+.rss-hr {
+	padding-top: 20px;
+	height: 100%;
+}
+.rss-hr h4 {
+	display: inline-block;
+	font-family: ProximaNova, sans-serif;
+	font-size: 2.3rem;
+	width: 44%;
+}
+.rss hr {
+	display: inline-block;
+	width: 55%;
+	float: right;
+	margin-top: 44px;
+}
+.rss h5 {
+	margin-bottom: 0;
+}
+.rss p {
+	font-family: ProximaNova, sans-serif;
+	font-weight: 300;
+	font-size: 2rem;
+	text-transform: capitalize;
+	letter-spacing: -0.05rem;
+	margin-top: 5px;
+	transition: transform .3s ease-in;
+}
+.rss p:hover {
+	color: #e7bb24;
+	cursor: pointer;
+	transform: scale(1.03);
+}
+
+footer {
+	position: relative;
+	box-sizing: border-box;
+}
+.footer {
+	background-color: #ffcc33;
+	height: 65px;
+	font-family: ProximaNova, sans-serif;
+}
+.footer nav {
+	display: flex;
+	justify-content: space-around;
+	height: inherit;
+	align-items: center;
+}
+.footer nav p {
+	font-size: 1.2rem;
+}
+.footer nav a {
+	text-decoration: none;
+	color: #111;
+	font-size: 1.6rem;
+	transition: color .4s;
+}
+.footer nav a:hover {
+	color: #FFF;
+	cursor: pointer;
+}
+.footer-center {
+	width: 60%;
+	text-align: center;
+}
+.footer-center a {
+	padding-right: 10%;
+}
+.footer-social i {
+	color: #ffcc33;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-align: center;
+	background-color: #fff;
+	margin: 0 10px;
+	line-height: 40px;
+}
+.footer-social i:hover {
+	color: #fff;
+	background-color: #ffcc33;
+}
+
+#calendar3 {
+  padding-bottom: 20%;
+  width: 100%;
+  font: monospace;
+  line-height: 3rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: ProximaNova, sans-serif;
+  border: 1px solid grey;
+  border-collapse: collapse;
+}
+#calendar3 thead tr:last-child {
+  font-size: small;
+  color: rgb(85, 85, 85);
+}
+#calendar3 tbody td {
+  color: grey;
+  border: 1px solid;
+}
+#calendar3 tbody td:nth-child(n+6), #calendar3 .holiday {
+  color: rgb(231, 140, 92);
+}
+#calendar3 tbody td.today {
+  color: white;
+  background-color: orange;
+}
